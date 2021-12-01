@@ -1,0 +1,99 @@
+{
+    "LEAK_MAIN_UNIT_NRF52810": {
+      "supported_form_factors": [],
+        "inherits": [
+            "Target"
+        ],
+        "core": "Cortex-M4F",
+        "macros": [
+            "NRF52",
+            "TARGET_MCU_NRF52810",
+            "NRF52810_XXAA",
+            "CMSIS_VECTAB_VIRTUAL",
+            "CMSIS_VECTAB_VIRTUAL_HEADER_FILE=\"cmsis_nvic.h\"",
+            "MBED_TICKLESS",
+            "MBED_MPU_CUSTOM"
+        ],
+        "config": {
+            "lf_clock_src": {
+                "macro_name": "MBED_CONF_NORDIC_NRF_LF_CLOCK_SRC",
+                "help": "Select Low Frequency clock source. Options: NRF_LF_SRC_XTAL, NRF_LF_SRC_SYNTH, and NRF_LF_SRC_RC",
+                "value": "NRF_LF_SRC_XTAL"
+            },
+            "lf_clock_rc_calib_timer_interval": {
+                "macro_name": "MBED_CONF_NORDIC_NRF_LF_CLOCK_CALIB_TIMER_INTERVAL",
+                "value": 16
+            },
+            "lf_clock_rc_calib_mode_config": {
+                "macro_name": "MBED_CONF_NORDIC_NRF_LF_CLOCK_CALIB_MODE_CONFIG",
+                "value": 0
+            },
+            "uart_0_fifo_size": {
+                "help": "UART0 FIFO buffer. FIFO buffer is filled from DMA buffer.",
+                "value": 32
+            },
+            "uart_1_fifo_size": {
+                "help": "UART1 FIFO buffer. FIFO buffer is filled from DMA buffer.",
+                "value": 32
+                
+            },
+            "SPI_COUNT": {
+                "macro_name": "SPI_COUNT",
+                "value": 1
+            },
+            "TWI_COUNT": {
+                "macro_name": "TWI_COUNT",
+                "value": 1
+            },
+            "USBTX": {
+                "macro_name": "USBTX",
+                "value": "NC"
+            },
+            "USBRX": {
+                "macro_name": "USBRX",
+                "value": "NC"
+            },
+            "GPIO_PIN_COUNT": {
+                "macro_name": "GPIO_PIN_COUNT",
+                "value": 32
+            }
+        },
+        "supported_application_profiles": [
+            "full", "bare-metal"
+        ],
+        "OUTPUT_EXT": "hex",
+        "supported_toolchains": [
+            "GCC_ARM",
+            "ARM"
+        ],
+        "bootloader_supported": false,
+        "extra_labels": [
+            "NORDIC",
+            "NRF5x",
+            "NRF52",
+            "SDK_15_0",
+            "SOFTDEVICE_NONE"
+        ],
+        "device_has": [
+            "ANALOGIN",
+            "FLASH",
+            "I2C",
+            "INTERRUPTIN",
+            "ITM",
+            "LPTICKER",
+            "PORTIN",
+            "PORTINOUT",
+            "PORTOUT",
+            "PWMOUT",
+            "SERIAL",
+            "SLEEP",
+            "SPI",
+            "SPI_ASYNCH",
+            "TRNG",
+            "USTICKER"
+        ],
+        "components": [
+            "FLASHIAP"
+        ]
+    }
+  }

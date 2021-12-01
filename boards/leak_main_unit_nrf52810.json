@@ -1,0 +1,50 @@
+{
+    "build": {
+      "core": "nRF5",
+      "cpu": "cortex-m4",
+      "extra_flags": "-DNRF52810_XXAA -DNRF52",
+      "f_cpu": "64000000L",
+      "hwids": [
+        [
+          "0x239A",
+          "0x8029"
+        ],
+        [
+          "0x239A",
+          "0x0029"
+        ],
+        [
+          "0x239A",
+          "0x002A"
+        ],
+        [
+          "0x239A",
+          "0x802A"
+        ]
+      ],
+      "mcu": "nrf52810"
+    },
+    "connectivity": [
+      "bluetooth"
+    ],
+    "debug": {
+      "stlink_device": "nRF52810_xxAA",
+      "svd_path": "nrf52.svd"
+    },
+    "frameworks": [
+      "mbed"
+    ],
+    "name": "iotans leak detection main unit nrf52810",
+    "upload": {
+      "maximum_ram_size": 24000,
+      "maximum_size": 196000,
+      "require_upload_port": true,
+      "speed": 115200,
+      "protocol": "stlink",
+      "protocols": [
+        "stlink"
+      ]
+    },
+    "url": "https://iotans.io",
+    "vendor": "Iotans"
+  }
